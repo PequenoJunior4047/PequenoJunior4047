@@ -1,0 +1,30 @@
+import tkinter as tk
+from keyboard import is_pressed
+from sys import exit
+
+class Contador:
+    def __init__(self, master):
+        self.master = master
+        master.title("Butão Clicker")
+
+        self.label = tk.Label(master, text ='Aperte o butão, isso é uma ordem')
+        self.label.pack()
+
+        self.contagem = 0
+
+        self.button = tk.Button(master, text="Butão", command=self.aumentar_contagem)
+        self.button.pack()
+
+        self.label = tk.Label(master, text="Contagem: {}".format(self.contagem))
+        self.label.pack()
+
+        # Vincula a tecla espaço à função aumentar_contagem
+        self.master.bind('<space>', lambda event: self.aumentar_contagem())
+
+    def aumentar_contagem(self):
+        self.contagem += 1
+        self.label.config(text="Contagem: {}".format(self.contagem))
+
+root = tk.Tk()
+app = Contador(root)
+root.mainloop()
