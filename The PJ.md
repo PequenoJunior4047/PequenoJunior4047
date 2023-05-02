@@ -1,0 +1,5 @@
+- 👋 Hi, I’m @PequenoJunior4047
+- 👀 I’m interested in python, digital arts and minimally in history
+- 🌱 I’m currently learning Python 
+- 💞️ I’m looking to collaborate on for now without anyone ._.
+- 📫 How to reach me you can go to my instagram @pequenojunior4047_pxl or call me on my email: arielnegraooliveira@gmail.com
